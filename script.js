@@ -22,6 +22,11 @@ function checkAnswers(){
         
         if (parseInt($("#input" + i).val()) !== parseInt($("#box" + i + "Num p").text()) ){
             wrongSubmission();
+            
+            for (var i = 1; i < 6; i++){
+                $("#box" + i + "Num p").remove();
+            }
+            
             return;
         }
     }
