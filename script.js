@@ -16,9 +16,11 @@ function showCode(){
 function checkAnswers(){
     for (var i = 1; i < 6; i++){
         
+        /*
         console.log("ITERATION:" + i);
         console.log("input" + parseInt($("#input" + i).val()));
         console.log("existing value" + parseInt($("#box" + i + "Num p").text()));
+        */
         
         if (parseInt($("#input" + i).val()) !== parseInt($("#box" + i + "Num p").text()) ){
             wrongSubmission();

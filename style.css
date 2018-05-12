@@ -1,3 +1,7 @@
+body{
+    background-color: ghostwhite
+}
+
 #boxes {
     fill: none;
     stroke: black;
