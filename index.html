@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HAWKLIFE Leadership Conference</title>
+    <link rel = "stylesheet" href = "style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src='script.js'></script>
+  </head>
+
+    <body>
+        
+        <div id="header">
+            <h3>Crack The Code</h3>
+            <p>Generate a 20 digit code below and enter it correctly to pass this obstacle!</p>
+        </div>
+        
+        
+        <div id="boxes">
+            
+            <div id="numbers">
+                <div id="box1Num"></div>
+                <div id="box2Num"></div>
+                <div id="box3Num"></div>
+                <div id="box4Num"></div>
+                <div id="box5Num"></div>
+            </div>
+            
+            <svg width="2000" height="200">
+                
+                <rect id="box1" width="11%" height="100" y="85"/>
+                <rect id="box2" width="11%" height="100" x="13%" y="88"//>
+                <rect id="box3" width="11%" height="100" x="26%" y="88"//>
+                <rect id="box4" width="11%" height="100" x="39%" y="88"//>
+                <rect id="box5" width="11%" height="100" x="52%" y="88"/>     
+            </svg>
+        </div>
+        
+        <div id="buttonParent">
+            <button id="button" type="button" onclick="showCode()">Generate Code</button>
+        </div>
+        
+        <h3>Input the Code in Boxes Below</h3>
+        
+        <div id="inputs">
+            <input id="input1"/>
+            <input id="input2"/>
+            <input id="input3"/>
+            <input id="input4"/>
+            <input id="input5"/>
+        </div>
+        
+        <div id="submitButton">
+            <button onclick="checkAnswers()">Submit Code</button>
+        </div>
+        
+        
+    </body>
+</html>
